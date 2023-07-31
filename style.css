@@ -55,28 +55,28 @@ span {
 .passado img{
     width: 50px;
     height: 10;
-    margin: 20px;
+    margin: 5px;
 }
 .presente img{
     width: 50px;
     height: 10;
-    margin: 20px;
+    margin: 5px;
  }
  .futuro img{
     font-size: 10px;
-    margin: 20px;
+    margin: 1px;
     }
 .passado p{
 font-size: 10px;
-margin: 20px;
+margin: 1px;
 }
 .presente p{
 font-size: 10px;
-margin: 20px;
+margin: 1px;
 }
 .futuro p{
 font-size: 10px;
-margin: 20px;
+margin: 1px;
 }
 
 .passado p b{
@@ -94,17 +94,49 @@ margin: 20px;
   object-fit: cover;
 }
 
-.passado {
-    /* Certifique-se de que a div contendo a imagem e o texto tenha largura suficiente para caber os dois elementos */
-    width: 100%;
-  
-    /* Limpa o fluxo de elementos ao redor */
-    overflow: hidden;
+  .passadoA {
+    display: flex; /* Ativa o flexbox */
+    align-items: center; /* Centraliza verticalmente os itens na div */
   }
-  img {
-    /* Define a imagem para flutuar à esquerda */
-    float: left;
   
-    /* Define uma margem para afastar o texto da imagem */
-    margin-right: 2px; /* Ou a quantidade desejada */
+  .passadoB {
+    display: flex; /* Ativa o flexbox */
+    align-items: center; /* Centraliza verticalmente os itens na div */
   }
+
+      .passadoC {
+        display: flex; /* Ativa o flexbox */
+        align-items: center; /* Centraliza verticalmente os itens na div */
+      }
+
+      .presenteA {
+        display: flex; /* Ativa o flexbox */
+        align-items: center; /* Centraliza verticalmente os itens na div */
+      }
+
+      .presenteB {
+        display: flex; /* Ativa o flexbox */
+        align-items: center; /* Centraliza verticalmente os itens na div */
+      }
+      .presenteC {
+        display: flex; /* Ativa o flexbox */
+        align-items: center; /* Centraliza verticalmente os itens na div */
+      }
+      @media (max-width:350px){
+        html {
+          width: 1000px;
+        }
+      }
+        @media (max-width:360px){
+          .image_separados {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width:3360px){
+        .pai{
+        flex-direction: column;
+      }
+        }
+      
+      
